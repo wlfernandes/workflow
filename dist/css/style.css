@@ -8321,7 +8321,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   width: 70%;
   height: 100%;
   position: fixed;
-  left: 0;
+  left: -80%;
   top: 0;
   background-color: #0275d8;
   z-index: 1001; }
@@ -8343,3 +8343,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       align-items: center; }
     .sidebar .nav .fa {
       font-size: 1.5em; }
+
+.open-sidebar:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000; }
+
+.open-sidebar .sidebar {
+  left: 0; }

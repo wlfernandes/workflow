@@ -1,0 +1,1 @@
+$(function(){$("html, body").on("click",function(e){e.target==document.documentElement&&$("html").removeClass("open-sidebar")})});
