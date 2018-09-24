@@ -8319,6 +8319,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .sidebar {
   width: 70%;
+  max-width: 150px;
   height: 100%;
   position: fixed;
   left: -80%;
@@ -8381,3 +8382,42 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       font-size: .8rem;
       margin-right: .5em;
       margin-bottom: 0px; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.card {
+  margin-bottom: 2rem; }
+  .card .nav {
+    flex-direction: column; }
+  .card.contractors .card-block {
+    display: flex;
+    justify-content: center; }
+    .card.contractors .card-block .fa {
+      font-size: 5rem;
+      color: #f0ad4e; }
+  .card.contractors .card-footer {
+    display: flex;
+    justify-content: space-between; }
+    .card.contractors .card-footer .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.3rem; }
+      .card.contractors .card-footer .item .warning {
+        color: #f0ad4e; }
+      .card.contractors .card-footer .item .info {
+        color: #5bc0de; }
+
+.badge {
+  width: 14px;
+  height: 14px;
+  display: inline-block; }
+  .badge.primary {
+    background-color: #0275d8; }
+  .badge.info {
+    background-color: #5bc0de; }
+  .badge.warning {
+    background-color: #f0ad4e; }

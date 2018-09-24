@@ -1,37 +1,62 @@
 @import "../components/bootstrap/scss/bootstrap";
 @import "../components/components-font-awesome/scss/font-awesome";
+
+//sidebar
 @import "sidebar";
 
 // Header
-.header{
-	width: 100%;
-	height: 70px;
-	padding: 0 1em;
-	background-color: #fff;
-	display: flex;
-	justify-content: space-between;
+@import "header";
 
-	box-shadow: 0 5px 15px -2px rgba(0,0,0 , .2); 
-	.mark{
-		color: $brand-warning;
+.center-block{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.card{
+	margin-bottom: 2rem;
+	.nav{
+		flex-direction: column;
 	}
-	.offcanvas,
-	.date-timer,
-	.user{
-		display: flex;
-		align-items: center;
-	}
-	.offcanvas .item{
-		font-size: 2rem;
-	}
-
-	.date-timer{
-		flex-direction: row;
-		> p{
-			font-size: .8rem;
-			margin-right: .5em;
-			margin-bottom: 0px;
-
+	&.contractors{
+		.card-block{
+			display: flex;
+			justify-content: center;
+			.fa{
+				font-size: 5rem;
+				color:$brand-warning;
+			}
 		}
+		
+		.card-footer{
+			display: flex;
+			justify-content: space-between;
+			.item{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 1.3rem;
+				.warning{
+					color: $brand-warning;
+				}
+				.info{
+					color: $brand-info;
+				}
+			}
+		}
+	}
+}
+.badge {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	
+	&.primary{
+		background-color: $brand-primary;
+	}
+	&.info{
+		background-color: $brand-info;
+	}
+	&.warning{
+		background-color: $brand-warning;
 	}
 }
