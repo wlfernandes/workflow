@@ -1,54 +1,37 @@
 @import "../components/bootstrap/scss/bootstrap";
 @import "../components/components-font-awesome/scss/font-awesome";
-.sidebar{
-	width: 70%;
-	height: 100%;
-	position: fixed;
-	left: -80%;
-	top: 0;
-	background-color: $brand-primary;
-	z-index: 1001;
-	.sidebar-header{
-		width: 100%;
-		height: 70px;
-		background-color: $brand-warning;
+@import "sidebar";
+
+// Header
+.header{
+	width: 100%;
+	height: 70px;
+	padding: 0 1em;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+
+	box-shadow: 0 5px 15px -2px rgba(0,0,0 , .2); 
+	.mark{
+		color: $brand-warning;
+	}
+	.offcanvas,
+	.date-timer,
+	.user{
 		display: flex;
-		justify-content: center;
 		align-items: center;
 	}
-	.nav{
-		flex-direction: column;
-		.nav-item{
-			padding: .1em;
-		}
-
-		.nav-link{
-			color: #fff;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-		.fa{
-			font-size: 1.5em;
-		}
-		
+	.offcanvas .item{
+		font-size: 2rem;
 	}
 
-}
-.open-sidebar{
-	&:after{
-		content: "";
-		position: fixed;
-		top:0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba($color: #000000, $alpha: .4);
-		z-index: 1000;
+	.date-timer{
+		flex-direction: row;
+		> p{
+			font-size: .8rem;
+			margin-right: .5em;
+			margin-bottom: 0px;
 
-
-	}
-	.sidebar{
-		left: 0;
+		}
 	}
 }
